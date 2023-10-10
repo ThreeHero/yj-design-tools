@@ -14,14 +14,4 @@ yarn add yj-design-tools
 
 > 工具库中包含 存入 Storage、md5 加密与请求库
 
-可以到处 App 和 getHttp 函数
-
-```js
-App.setConfig({
-  name: 'xxx',
-  baseUrl: 'xxx'
-})
-const http = getHttp()
-
-
-```
+可以到处 App 和 getHttp 函数 (传入配置)

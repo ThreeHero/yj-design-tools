@@ -7,6 +7,7 @@
     "dev": "webpack-dev-server",
     "build:watch": "webpack --watch"
   },
+  "repository": "https://github.com/ThreeHero/yj-design-tools.git",
   "keywords": [
     "工具库",
     "utils",
