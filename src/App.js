@@ -1,6 +1,7 @@
 import { setCache, getCache, clearCache } from './cache'
 import { TOKEN_KEY } from './const'
 import { md5 } from './crypto'
+import dayjs from './dayjs'
 
 class App {
   config = null
@@ -32,6 +33,8 @@ class App {
   static clearCache = clearCache
 
   static md5 = md5
+
+  static dayjs = dayjs
 }
 
 export default App

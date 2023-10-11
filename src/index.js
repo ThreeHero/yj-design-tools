@@ -1,8 +1,4 @@
-import App from './App'
-
-import getHttp from './http'
-
-export default {
-  App,
-  getHttp
-}
+export { default as App } from './App'
+export { default as getHttp } from './http'
+export { formatDate } from './dayjs'
+// export { default as route } from './route'
