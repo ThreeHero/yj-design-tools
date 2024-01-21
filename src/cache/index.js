@@ -27,7 +27,7 @@ function getCache(key, isL = true) {
       const data = JSON.parse(v)
       return data
     } catch {
-      return v
+      return value
     }
   }
 
