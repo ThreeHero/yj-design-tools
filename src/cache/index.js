@@ -22,13 +22,8 @@ function getCache(key, isL = true) {
       return null
     }
 
-    // 对解密的值进行解析
-    try {
-      const data = JSON.parse(v)
-      return data
-    } catch {
-      return value
-    }
+    const data = JSON.parse(v)
+    return data
   }
 
   // 2. key是数组
