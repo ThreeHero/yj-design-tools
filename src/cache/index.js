@@ -1,15 +1,12 @@
-import { encryptAES, decryptAES } from '../crypto'
-
 // 设置缓存
 function setCache(key, value, isL = true) {
-  if (typeof key !== 'string') return void 0
+  if (typeof key !== 'string') null
   if (value === null || value === undefined || Number.isNaN(value)) {
-    return void 0
+    return null
   }
   const Storage = isL ? localStorage : sessionStorage
   const v = JSON.stringify(value)
-  const cryptV = encryptAES(v)
-  Storage.setItem(key, cryptV)
+  Storage.setItem(key, v)
 }
 
 // 获取缓存
@@ -24,9 +21,6 @@ function getCache(key, isL = true) {
     if (value === null || value === undefined || Number.isNaN(value)) {
       return null
     }
-
-    // 获取到值
-    const v = decryptAES(value)
 
     // 对解密的值进行解析
     try {
