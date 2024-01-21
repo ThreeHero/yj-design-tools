@@ -22,7 +22,7 @@ function getCache(key, isL = true) {
       return null
     }
 
-    const data = JSON.parse(v)
+    const data = JSON.parse(value)
     return data
   }
 
