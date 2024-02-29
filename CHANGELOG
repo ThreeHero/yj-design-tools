@@ -2,59 +2,59 @@ YJ 工具库
 
 - v1.1.12
 
-  包含函数 App 和 getHttp
-  App 中包含
+包含函数 App 和 getHttp
+App 中包含
 
-  - getConfig
-  - setConfig
-  - setToken
-  - getToken
-  - clearToken
-  - setCache
-  - getCache
-  - clearCache
-  - md5
+- getConfig
+- setConfig
+- setToken
+- getToken
+- clearToken
+- setCache
+- getCache
+- clearCache
+- md5
 
-  getHttp 函数需要传入`axios`配置
+getHttp 函数需要传入`axios`配置
 
-  因为是默认导出的 所以需要导入一个变量接收 一般使用`YJTools`
+因为是默认导出的 所以需要导入一个变量接收 一般使用`YJTools`
 
 - v1.1.15
 
-  不支持默认导出 只支持按需导出
-  包含 App、getHttp、formatDate
-  App 中包含
+不支持默认导出 只支持按需导出
+包含 App、getHttp、formatDate
+App 中包含
 
-  - getConfig
-  - setConfig
-  - setToken
-  - getToken
-  - clearToken
-  - setCache
-  - getCache
-  - clearCache
-  - md5
-  - dayjs
+- getConfig
+- setConfig
+- setToken
+- getToken
+- clearToken
+- setCache
+- getCache
+- clearCache
+- md5
+- dayjs
 
 - v1.1.19
 
-  - 更新 去掉 cache 加密
+- 更新 去掉 cache 加密
 
-- v1.2.0
- 
-  - delete App
-  - delete getHttp
-  - create getCache
-  - create getToken
-  - create getUserinfo
-  - create setCache
-  - create setToken
-  - create setUserinfo
-  - create clearCache
-  - create clearToken
-  - create clearUserinfo
-  - create md5
-  - update formatDate
-  - create dateJs
-  - create getInstance
-  - create http
+- v1.2.1
+
+- delete App
+- delete getHttp
+- create getCache
+- create getToken
+- create getUserinfo
+- create setCache
+- create setToken
+- create setUserinfo
+- create clearCache
+- create clearToken
+- create clearUserinfo
+- create md5
+- update formatDate
+- create dateJs
+- create getInstance
+- create http
