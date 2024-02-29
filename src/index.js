@@ -1,4 +1,52 @@
-export { default as App } from './App'
-export { default as getHttp } from './http'
-export { formatDate } from './dayjs'
-// export { default as route } from './route'
+import {
+  getCache,
+  getToken,
+  getUserinfo,
+  setCache,
+  setToken,
+  setUserinfo,
+  clearCache,
+  clearToken,
+  clearUserinfo
+} from './cache'
+import { dateJs, formatDate } from './dayjs'
+import { md5 } from './crypto'
+import { getInstance, noAuthHeaders } from './http'
+
+const http = getInstance()
+
+export {
+  getCache,
+  getToken,
+  getUserinfo,
+  setCache,
+  setToken,
+  setUserinfo,
+  clearCache,
+  clearToken,
+  clearUserinfo,
+  formatDate,
+  dateJs,
+  md5,
+  noAuthHeaders,
+  getInstance,
+  http
+}
+
+export default {
+  getCache,
+  getToken,
+  getUserinfo,
+  setCache,
+  setToken,
+  setUserinfo,
+  clearCache,
+  clearToken,
+  clearUserinfo,
+  formatDate,
+  dateJs,
+  md5,
+  noAuthHeaders,
+  getInstance,
+  http
+}

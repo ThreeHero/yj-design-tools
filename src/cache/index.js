@@ -1,6 +1,8 @@
+import { TOKEN_KEY, USERINFO } from '../const'
+
 // 设置缓存
-function setCache(key, value, isL = true) {
-  if (typeof key !== 'string') null
+export function setCache(key, value, isL = true) {
+  if (typeof key !== 'string') return null
   if (value === null || value === undefined || Number.isNaN(value)) {
     return null
   }
@@ -10,8 +12,7 @@ function setCache(key, value, isL = true) {
 }
 
 // 获取缓存
-function getCache(key, isL = true) {
-  // 1. key 是字符串
+export function getCache(key, isL = true) {
   const Storage = isL ? localStorage : sessionStorage
 
   if (typeof key === 'string') {
@@ -32,9 +33,31 @@ function getCache(key, isL = true) {
   }
 }
 
-function clearCache(key, isL = true) {
+export function clearCache(key, isL = true) {
   const Storage = isL ? localStorage : sessionStorage
   Storage.removeItem(key)
 }
 
-export { setCache, getCache, clearCache }
+export const getToken = () => {
+  return getCache(TOKEN_KEY)
+}
+
+export const getUserinfo = () => {
+  return getCache(USERINFO)
+}
+
+export const setToken = token => {
+  setCache(TOKEN_KEY, token)
+}
+
+export const setUserinfo = userinfo => {
+  setCache(USERINFO, userinfo)
+}
+
+export const clearToken = () => {
+  clearCache(TOKEN_KEY)
+}
+
+export const clearUserinfo = () => {
+  clearCache(USERINFO)
+}

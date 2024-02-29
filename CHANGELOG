@@ -39,3 +39,22 @@ YJ 工具库
 - v1.1.19
 
   - 更新 去掉 cache 加密
+
+- v1.2.0
+ 
+  - delete App
+  - delete getHttp
+  - create getCache
+  - create getToken
+  - create getUserinfo
+  - create setCache
+  - create setToken
+  - create setUserinfo
+  - create clearCache
+  - create clearToken
+  - create clearUserinfo
+  - create md5
+  - update formatDate
+  - create dateJs
+  - create getInstance
+  - create http
